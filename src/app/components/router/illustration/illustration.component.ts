@@ -37,7 +37,6 @@ public illustration =[
           subtitle:'Bright and well-though-out startup illustrations',
           app:'for Sketch, Figma, Illustrator, Affinity Designer',
     payment: 'Free and Paid Versions',
-    category: 'Illustration'
   },
   {
     src:'https://assets-global.website-files.com/5bfd6f4468ee7943c2d331dd/609298616f4d571fa469308e_Cover.jpg',

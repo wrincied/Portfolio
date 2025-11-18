@@ -45,7 +45,7 @@ import { AntonComponent } from './components/router/anton/anton.component';
     AventaderComponent,
     SliderComponent,
     HomeartComponent,
-    AntonComponent
+    AntonComponent,
   ],
   imports: [
     BrowserModule,
