@@ -879,25 +879,25 @@ class ReleasesComponent {
                 alt: 'Big collection of Business Card Mockups'
             },
             {
-                src: '/assets/img/Knits.jpg',
+                src: 'assets/img/Knits.jpg',
                 title: 'Big collection of paid beautiful and colorful illustrations',
                 author: 'Krushko Nikita',
                 alt: 'Big collection of paid beautiful and colorful illustrations'
             },
             {
-                src: '/assets/img/20 funny and carefully-designed scenes in a cartoon style.png',
+                src: 'assets/img/20 funny and carefully-designed scenes in a cartoon style.png',
                 title: '20 funny and carefully-designed scenes in a cartoon style',
                 author: 'FelixTrex',
                 alt: 'Big collection of Business Card Moc20 funny and carefully-designed scenes in a cartoon style'
             },
             {
-                src: '/assets/img/In touch.jpg',
+                src: 'assets/img/In touch.jpg',
                 title: 'Large collection of paid minimalistic illustrations',
                 author: 'Krushko Nikita',
                 alt: 'Large collection of paid minimalistic illustrations'
             },
             {
-                src: '/assets/img/UI Illustrations.jpg',
+                src: 'assets/img/UI Illustrations.jpg',
                 title: 'UI Illustrations',
                 author: 'Author',
                 alt: 'UI Illustrations'
@@ -1538,7 +1538,7 @@ __webpack_require__.r(__webpack_exports__);
 class AppComponent {
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
-AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 31, vars: 0, consts: [[1, "wrapper"], [1, "header"], [1, "header__inner"], ["routerLink", "home", 1, "logo"], ["src", "/assets/logo.png", "alt", "Logo", 1, "icon-logo"], ["type", "checkbox", "id", "nav-toggle", 1, "nav-toggle"], ["for", "nav-toggle", 1, "nav-toggle-label"], [1, "nav"], ["routerLink", "uiux", "routerLinkActive", "active"], ["routerLink", "illustrations", "routerLinkActive", "active"], ["routerLink", "motiondesign", "routerLinkActive", "active"], ["routerLink", "gamedesign", "routerLinkActive", "active"], ["routerLink", "webdevelopment", "routerLinkActive", "active"], ["aria-hidden", "true", 1, "nav__line"], ["routerLink", "Our-team", "routerLinkActive", "active"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 31, vars: 0, consts: [[1, "wrapper"], [1, "header"], [1, "header__inner"], ["routerLink", "home", 1, "logo"], ["src", "assets/logo.png", "alt", "Logo", 1, "icon-logo"], ["type", "checkbox", "id", "nav-toggle", 1, "nav-toggle"], ["for", "nav-toggle", 1, "nav-toggle-label"], [1, "nav"], ["routerLink", "uiux", "routerLinkActive", "active"], ["routerLink", "illustrations", "routerLinkActive", "active"], ["routerLink", "motiondesign", "routerLinkActive", "active"], ["routerLink", "gamedesign", "routerLinkActive", "active"], ["routerLink", "webdevelopment", "routerLinkActive", "active"], ["aria-hidden", "true", 1, "nav__line"], ["routerLink", "Our-team", "routerLinkActive", "active"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "header", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
