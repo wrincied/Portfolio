@@ -3,7 +3,7 @@
     <div class="content__item" *ngFor="let slide of slider">
         <a routerLink="{{slide.routerLink}}">
           <div class="content-item__img">
-            <img [src]="slide.src" alt="{{slide.alt}}">
+            <img [src]="slide.src" alt="{{slide.alt}}" (error)="onImgError($event)">
           </div>        
           <div class="item__disc">
             <div class="role">

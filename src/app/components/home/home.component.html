@@ -1,28 +1,35 @@
- <div class="title-content">
-    <div class="main-content__banner" *ngFor = "let new of RealeasDb">
-      <div class="banner__img">
-        <img [src]="new.srcImg" alt="">
-      </div>
-      <div class="content-banner__text">
-        <div class="banner_subtext">
-          <p>{{new.subtext}}</p>
-        </div>
-        <div class="banner__title">
-          <h1>{{new.title}}</h1>
-        </div>
-        <div class="banner__author">
-          <p>Author:{{new.subtitle}}</p>
-        </div>
+<div class="title-content" *ngFor="let item of RealeasDb">
+  <div class="main-content__banner">
+    <div class="banner__img">
+      <img [src]="item.srcImg" [alt]="item.title" />
+    </div>
 
-        <div class="buttonslink">
-          <a href="{{new.link}}" target="_blank">{{new.linkInfo}}<img src="https://assets-global.website-files.com/5bfd1275cc56e15ce750b18e/607e6bd63c46c0e90d1a1086_Path.svg" loading="lazy" width="14" alt="" class="icon-button"></a>
-        </div>
+    <div class="content-banner__text">
+      <div class="banner__subtext">
+        <p>{{ item.subtext }}</p>
+      </div>
+
+      <div class="banner__title">
+        <h1>{{ item.title }}</h1>
+      </div>
+
+      <div class="banner__author">
+        <p>Author: {{ item.subtitle }}</p>
+      </div>
+
+      <div class="buttonslink">
+        <a [href]="item.link" target="_blank">
+          {{ item.linkInfo }}
+        </a>
       </div>
     </div>
   </div>
-  <div class="sub-content">
-    <app-releases></app-releases>
-  </div>
-  <div class="main-content">
-    <app-homeart></app-homeart>
-  </div>
+</div>
+
+<div class="sub-content">
+  <app-releases></app-releases>
+</div>
+
+<div class="main-content">
+  <app-homeart></app-homeart>
+</div>

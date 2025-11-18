@@ -5,10 +5,13 @@ import { Component, OnInit,Input } from '@angular/core';
   styleUrls: ['./slider.component.scss']
 })
 export class SliderComponent  {
-
+    defaultImage = 'https://img.icons8.com/ios/50/user-male-circle--v1.png'
   // @Input() slides: any[] = [];
   @Input() header: string = '';
-
+ onImgError(event: Event) {
+    const img = event.target as HTMLImageElement;
+    img.src = this.defaultImage;
+  }
   public slider=[
     {
       src: 'https://lh3.google.com/u/0/d/12Zo2go1NPE7VvPf_y0wcAuTDNXdYJysa=w200-h190-p-k-nu-iv1',

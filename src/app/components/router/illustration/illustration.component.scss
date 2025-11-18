@@ -28,20 +28,24 @@
         .art__flex-content{
             border-top: 1px solid #dfdfdf;
             padding-top: 15px;
-            display: grid;
-            width: 100%;
             margin-top: 20px;
-            grid-auto-columns: 1fr;
-            grid-column-gap: 20px;
-            grid-row-gap: 20px;
-            grid-template-areas: ".";
-            -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-            grid-template-columns: 1fr 1fr 1fr;
-            -ms-grid-rows: auto;
-            grid-template-rows: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-gap: 20px;
+            width: 100%;
                 .content__item{
-                    border: 1px solid #dfdfdf;
-                    border-radius: 8px 8px 8px 8px;
+                        border: 1px solid #dfdfdf;
+                        border-radius: 8px;
+                        background-color: #fff;
+                        overflow: hidden;
+                        display: flex; // чтобы anchor растягивался
+                        text-decoration: none;
+                        overflow: hidden;
+                        transition: box-shadow 0.2s ease, transform 0.2s ease;
+                        &:hover {
+                        transform: translateY(-3px);
+                        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+                        }
                     a{
                         // padding: 60px 45px;
                         position: relative;

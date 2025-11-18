@@ -10,6 +10,18 @@ export class UIUXComponent {
   constructor(private titleService: Title) {
     this.titleService.setTitle("UI & UX");
  }
+ ngOnInit() {
+  // Добавляем автоматическую генерацию routerLink
+  this.uiuxcontent = this.addRouterLinks(this.uiuxcontent, 'UI-UX');
+}
+
+addRouterLinks(list: any[], category: string) {
+  return list.map(item => ({
+    ...item,
+    routerLink: `/${category}/${item.title.toLowerCase().replace(/\s+/g, '-')}`
+  }));
+}
+
  public Title =[
    {
     title: 'UI and UX Tools' ,
@@ -26,9 +38,7 @@ export class UIUXComponent {
           app: 'for Sketch and Figma',
     currency:'$',
             price: '35',
-    routerpresentation:'ragments-ios-wireframe-kit/presentation',
                       presentation:'View presentation',
-    routerLink:'ragments-ios-wireframe-kit'
    },
    {
     src: 'https://assets-global.website-files.com/5bfd6f4468ee7943c2d331dd/5fe5ebf7099f983378d64e64_%20800.jpg',
@@ -38,9 +48,7 @@ export class UIUXComponent {
           app: 'for Sketch',
     currency:'$',
             price: '35',
-    routerpresentation:'design-starter-kit/presentation',
                       presentation:'View presentation',
-    routerLink:'design-starter-kit'
    },
    {
     src: 'https://assets-global.website-files.com/5bfd6f4468ee7943c2d331dd/5c2ddb6aa1a87225969418b5_cp.jpeg',
@@ -50,9 +58,7 @@ export class UIUXComponent {
           app: 'for Sketch',
     currency:'$',
             price: '79',
-    routerpresentation:'control-panel/presentation',
                       presentation:'View presentation',
-    routerLink:'control-panel'
    },
    {
     src: 'https://assets-global.website-files.com/5bfd6f4468ee7943c2d331dd/5fe34e2ab59fa3307bf4b489_5c867988a630fe868ac66dc1_Charts.jpg',
@@ -62,9 +68,11 @@ export class UIUXComponent {
           app: 'for Sketch',
     currency:'',
             price: 'Free',
-    routerpresentation:'charts/presentation',
                       presentation:'View presentation',
-    routerLink:'charts'
    }
- ]
+ ].map(item => ({
+    ...item,
+    // автоматическое создание routerLink из title
+    routerLink: item.title.toLowerCase().replace(/\s+/g, '-')
+  }));
 }

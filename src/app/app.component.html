@@ -1,40 +1,39 @@
 <div class="wrapper">
-  <header>
-    <div class="hamburger-menu">
-      <div class="nav-left">
-        <div class="logo">
-          <a routerLink="home">
-            <img src="../assets/logo.png" alt="Logo" class="icon-logo">
-          </a>
-        </div>
-        <ul class="nav">
-              <li>
-                <a routerLink="uiux">UI & UX</a>
-              </li>
-              <li>
-                <a routerLink="illustrations">Illustrations</a>
-              </li>
-              <li>
-                <a routerLink="motiondesign">Motion Design</a>
-              </li>
-              <li>
-                <a routerLink="gamedesign">Game Design</a>
-              </li>
-              <li>
-                <a routerLink="webdevelopment">Web Development</a>
-              </li>
-              <div class="nav__line"></div>
-              <li>
-                <a routerLink="Our-team">Our Team</a>
-              </li>
-          </ul>
-      </div>
-    </div>
-    <div class="nav__input">
-      <input type="checkbox" name="" id="menu__toggle">
-      <label for="menu__toggle">
+  <header class="header">
+    <div class="header__inner">
+      <a routerLink="home" class="logo">
+        <img src="../assets/logo.png" alt="Logo" class="icon-logo">
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
+      <label for="nav-toggle" class="nav-toggle-label">
         <span></span>
       </label>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a routerLink="uiux" routerLinkActive="active">UI & UX</a>
+          </li>
+          <li>
+            <a routerLink="illustrations" routerLinkActive="active">Illustrations</a>
+          </li>
+          <li>
+            <a routerLink="motiondesign" routerLinkActive="active">Motion Design</a>
+          </li>
+          <li>
+            <a routerLink="gamedesign" routerLinkActive="active">Game Design</a>
+          </li>
+          <li>
+            <a routerLink="webdevelopment" routerLinkActive="active">Web Development</a>
+          </li>
+
+          <li class="nav__line" aria-hidden="true"></li>
+
+          <li>
+            <a routerLink="Our-team" routerLinkActive="active">Our Team</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 
