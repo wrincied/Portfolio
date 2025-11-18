@@ -61,13 +61,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-<<<<<<< HEAD
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
-=======
                   "maximumWarning": "20kb",
                   "maximumError": "35kb"
->>>>>>> 2994a30 (Initial commit)
                 }
               ]
             }
