@@ -1,0 +1,36 @@
+<div class="uiux-content">
+    <div class="uiux-content__info" *ngFor = "let title of Title">
+          <div class="content__title">
+              <p>{{title.title}}</p>
+          </div>
+          <div class="content__discription">
+              <p>{{title.discription}}</p>
+          </div>
+    </div>
+    <div class="uiux-content__content" >
+        <div class="content__item" *ngFor = "let content of uiuxcontent">
+            <a routerLink="{{content.routerLink}}" routerLinkActive="routerLink-active">
+                <img [src]="content.src" alt="{{content.alt}}">
+              <div class="item__disc">
+                <div class="disc__title">
+                  <p>{{content.title}}</p>
+                </div>
+                <div class="disc__subtitle">
+                  <p>{{content.subtitle}}</p>
+                </div>
+                <div class="disc__app">
+                  <p>{{content.app}}</p>
+                </div>
+              </div>
+            </a>
+              <div class="disc__footer">
+                <div class="footer__price">
+                  <p>{{content.currency}}{{content.price}}</p>
+                </div>
+                <div class="footer__info">
+                  <a href="{{content.routerpresentation}}">{{content.presentation}}<img src="https://assets-global.website-files.com/5bfd1275cc56e15ce750b18e/607e6bd63c46c0e90d1a1086_Path.svg" loading="lazy" width="14" alt="" class="icon-button"></a>
+                </div>
+              </div>
+          </div>
+    </div>
+</div>

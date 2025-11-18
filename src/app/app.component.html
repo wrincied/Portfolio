@@ -1,0 +1,43 @@
+<div class="wrapper">
+  <header>
+    <div class="hamburger-menu">
+      <div class="nav-left">
+        <div class="logo">
+          <a routerLink="home">
+            <img src="../assets/logo.png" alt="Logo" class="icon-logo">
+          </a>
+        </div>
+        <ul class="nav">
+              <li>
+                <a routerLink="uiux">UI & UX</a>
+              </li>
+              <li>
+                <a routerLink="illustrations">Illustrations</a>
+              </li>
+              <li>
+                <a routerLink="motiondesign">Motion Design</a>
+              </li>
+              <li>
+                <a routerLink="gamedesign">Game Design</a>
+              </li>
+              <li>
+                <a routerLink="webdevelopment">Web Development</a>
+              </li>
+              <div class="nav__line"></div>
+              <li>
+                <a routerLink="Our-team">Our Team</a>
+              </li>
+          </ul>
+      </div>
+    </div>
+    <div class="nav__input">
+      <input type="checkbox" name="" id="menu__toggle">
+      <label for="menu__toggle">
+        <span></span>
+      </label>
+    </div>
+  </header>
+
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>

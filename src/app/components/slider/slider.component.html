@@ -1,0 +1,24 @@
+<div class="flex-author">
+  <nav>
+    <div class="content__item" *ngFor="let slide of slider">
+        <a routerLink="{{slide.routerLink}}">
+          <div class="content-item__img">
+            <img [src]="slide.src" alt="{{slide.alt}}">
+          </div>        
+          <div class="item__disc">
+            <div class="role">
+              <p>{{slide.role}}</p>
+            </div>
+            <div class="disc__title">
+              <p>{{slide.name}}</p>
+            </div>
+            <div class="disc__text">
+              <p>{{slide.text}}</p>
+            </div>
+          </div>
+        </a>
+    </div>
+  </nav>
+</div>  
+
+

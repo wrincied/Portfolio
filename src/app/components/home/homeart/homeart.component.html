@@ -1,0 +1,121 @@
+  <div class="art">
+    <div class="art__title" *ngFor = "let info of IllutrationTitleDb">
+       <p><span>{{info.number}}&nbsp;</span>{{info.title}}</p>
+    </div>
+    <div class="art__main-content" *ngFor = "let new of illustrationDB">
+        <div class="banner__img">
+          <img [src]="new.src" alt="">
+        </div>
+        <div class="content-banner__text">
+          <div class="banner_subtext">
+            <p>{{new.TypeArt}}</p>
+          </div>
+          <div class="banner__title">
+            <h1>{{new.title}}</h1>
+          </div>
+          <div class="banner__author">
+            <p>Author:{{new.author}}</p>
+          </div>
+  
+          <div class="buttonslink">
+            <a href="{{new.link}}" target="_blank">{{new.linkInfo}}<img src="https://assets-global.website-files.com/5bfd1275cc56e15ce750b18e/607e6bd63c46c0e90d1a1086_Path.svg" loading="lazy" width="14" alt="" class="icon-button"></a>
+          </div>
+        </div>
+    </div>
+    <div class="art__flex-content">
+      <div class="content__item" *ngFor="let artflex of illustrationDBflex">
+        <a routerLink="{{artflex.routerLink}}" routerLinkActive="routerLink-active">
+            <img [src]="artflex.src" alt="{{artflex.alt}}">
+          <div class="item__disc">
+            <div class="disc__title">
+              <p>{{artflex.title}}</p>
+            </div>
+            <div class="disc__subtitle">
+              <p>{{artflex.subtitle}}</p>
+            </div>
+            <div class="disc__app">
+              <p>{{artflex.app}}</p>
+            </div>
+          </div>
+          <div class="disc__payment">
+            <p>{{artflex.payment}}</p>           
+          </div>
+        </a>
+      </div> 
+    </div>
+    <div class="art__main-content" *ngFor = "let new of illustrationDBPartTwo">
+      <div class="banner__img">
+        <img [src]="new.src" alt="">
+      </div>
+      <div class="content-banner__text">
+        <div class="banner_subtext">
+          <p>{{new.TypeArt}}</p>
+        </div>
+        <div class="banner__title">
+          <h1>{{new.title}}</h1>
+        </div>
+        <div class="banner__author">
+          <p>Author:{{new.author}}</p>
+        </div>
+        <div class="buttonslink">
+          <a href="{{new.link}}" target="_blank">{{new.linkInfo}}<img src="https://assets-global.website-files.com/5bfd1275cc56e15ce750b18e/607e6bd63c46c0e90d1a1086_Path.svg" loading="lazy" width="14" alt="" class="icon-button"></a>
+        </div>
+        <div class="banner__covid">
+          <p>{{new.disc}}</p>
+        </div>
+        <div class="banner__covid-hiden">
+          <p>Wash your hands and be happy &nbsp;❤️</p>
+        </div>
+      </div>
+    </div>
+    <div class="art__flex-content">
+      <div class="content__item" *ngFor="let artflex of illustrationDBflexparttwo">
+        <a routerLink="{{artflex.routerLink}}" routerLinkActive="routerLink-active">
+            <img [src]="artflex.src" alt="{{artflex.alt}}">
+          <div class="item__disc">
+            <div class="disc__title">
+              <p>{{artflex.title}}</p>
+            </div>
+            <div class="disc__subtitle">
+              <p>{{artflex.subtitle}}</p>
+            </div>
+            <div class="disc__app">
+              <p>{{artflex.app}}</p>
+            </div>
+          </div>
+          <div class="disc__payment">
+            <p>{{artflex.payment}}</p>           
+          </div>
+        </a>
+      </div> 
+    </div>
+    <div class="art__title" *ngFor = "let info of IllutrationTitleDbTwo">
+      <p><span>{{info.number}}&nbsp;</span>{{info.title}}</p>
+   </div>
+   <div class="art__flex-content">
+    <div class="content__item" *ngFor="let artflex of UIUXDb">
+      <a routerLink="{{artflex.routerLink}}" routerLinkActive="routerLink-active">
+          <img [src]="artflex.src" alt="{{artflex.alt}}">
+        <div class="item__disc">
+          <div class="disc__title">
+            <p>{{artflex.title}}</p>
+          </div>
+          <div class="disc__subtitle">
+            <p>{{artflex.subtitle}}</p>
+          </div>
+          <div class="disc__app">
+            <p>{{artflex.app}}</p>
+          </div>
+        </div>
+        <div class="disc__footer">
+          <div class="footer__price">
+            <p>{{artflex.currency}}{{artflex.price}}</p>
+          </div>
+          <div class="footer__info">
+            <a href="{{artflex.routerpresentation}}">{{artflex.presentation}}<img src="https://assets-global.website-files.com/5bfd1275cc56e15ce750b18e/607e6bd63c46c0e90d1a1086_Path.svg" loading="lazy" width="14" alt="" class="icon-button"></a>
+          </div>
+        </div>
+      </a>
+    </div> 
+  </div>
+  </div>

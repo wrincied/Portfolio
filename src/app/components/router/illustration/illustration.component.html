@@ -1,0 +1,31 @@
+<div class="illustration-content__info" *ngFor = "let title of Title">
+    <div class="content__title">
+        <p>{{title.title}}</p>
+    </div>
+    <div class="content__discription">
+        <p>{{title.discription}}</p>
+    </div>
+</div>
+<div class="art__flex-content">
+    <div class="content__item" *ngFor="let content of illustration">
+      <a routerLink="{{content.routerLink}}" routerLinkActive="routerLink-active">
+          <img [src]="content.src" alt="{{content.alt}}">
+        <div class="item__disc">
+          <div class="disc__title">
+            <p>{{content.title}}</p>
+          </div>
+          <div class="disc__subtitle">
+            <p>{{content.subtitle}}</p>
+          </div>
+          <div class="disc__app">
+            <p>{{content.app}}</p>
+          </div>
+        </div>
+        <div class="disc__footer">
+          <div class="footer__price">
+            <p>{{content.payment}}</p>
+          </div>
+        </div>
+      </a>
+    </div> 
+  </div>
