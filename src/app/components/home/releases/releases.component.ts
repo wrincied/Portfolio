@@ -8,8 +8,17 @@ export class ReleasesComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+ ngOnInit() {
+  // Добавляем автоматическую генерацию routerLink
+  this.releaseDB = this.addRouterLinks(this.releaseDB, 'UI-UX');
+}
+
+addRouterLinks(list: any[], category: string) {
+  return list.map(item => ({
+    ...item,
+    routerLink: `/${category}/${item.title.toLowerCase().replace(/\s+/g, '-')}`
+  }));
+}
 public releaseDB =[
   {
       src:'assets/img/Big collection of Business Card Mockups.jpg',
@@ -41,5 +50,9 @@ public releaseDB =[
       author:'Author',
       alt:'UI Illustrations'
   }
-]
+].map(item => ({
+    ...item,
+    // автоматическое создание routerLink из title
+    routerLink: item.title.toLowerCase().replace(/\s+/g, '-')
+  }));
 }

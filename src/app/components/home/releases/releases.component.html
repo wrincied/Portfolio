@@ -4,8 +4,8 @@
   </div>
 
   <div class="flexible__content">
-    <div class="item" *ngFor="let content of releaseDB">
-      <a href="" class="item__link">
+    <div class="item" *ngFor="let content of releaseDB" >
+      <a href="" class="item__link" [routerLink]="content.routerLink">
         <div class="item__img">
           <img
             [src]="content.src"
