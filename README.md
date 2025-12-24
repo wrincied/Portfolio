@@ -36,7 +36,7 @@ This is a portfolio web application designed to showcase a range of creative ser
 
 1.  Clone the repository:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/wrincied/Portfolio.git
     ```
 2.  Navigate to the project directory:
     ```bash
