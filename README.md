@@ -84,5 +84,4 @@ This is a portfolio web application designed to showcase a range of creative ser
 └── README.md             # This file
 ```
 
-Note: This is an archived portfolio project from March 2023. It serves as a demonstration of early full-stack development skills using vanilla JavaScript and Node.js. For my most recent work with Angular 21 and Signals, please see the Spotify Clone repository.
-https://github.com/wrincied/spotify-clone
+Note: This is an archived portfolio project from March 2023. It serves as a demonstration of early full-stack development skills using vanilla JavaScript and Node.js. For my most recent work with Angular 21 and Signals, please see the [Spotify Clone](https://github.com/wrincied/spotify-clone) repository.
